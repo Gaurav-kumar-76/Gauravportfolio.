@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern developer portfolio with interactive project filters, dark mode, and performance-focused design."
+    />
+    <title>Gaurav | Modern Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar container">
+      <a href="#" class="brand">Gaurav<span>Portfolio</span></a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <p class="kicker">Full-Stack Developer • Product Mindset</p>
+        <h1>Building fast, useful, and beautiful digital experiences.</h1>
+        <p>
+          This refreshed portfolio follows 2026 trends: glassmorphism accents,
+          motion-safe interactions, dark mode memory, and filterable project cards.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore work</a>
+          <a class="btn" href="#contact">Book a call</a>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <div class="chip-row" id="projectFilters" role="tablist" aria-label="Project filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="ai">AI</button>
+            <button class="chip" data-filter="web">Web</button>
+            <button class="chip" data-filter="mobile">Mobile</button>
+          </div>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <article class="card" data-tags="ai web">
+            <h3>SkillPilot</h3>
+            <p>AI-powered learning planner that recommends goals and weekly tasks.</p>
+            <small>Next.js · OpenAI · Supabase</small>
+          </article>
+          <article class="card" data-tags="web">
+            <h3>InsightBoard</h3>
+            <p>Real-time dashboard for startup KPI tracking with role-based analytics.</p>
+            <small>React · Node.js · PostgreSQL</small>
+          </article>
+          <article class="card" data-tags="mobile ai">
+            <h3>FitLens</h3>
+            <p>Mobile app using on-device AI to improve exercise posture in real time.</p>
+            <small>Flutter · TensorFlow Lite</small>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2>About</h2>
+        <p>
+          I focus on product-oriented engineering: solving business goals, shipping quickly,
+          and maintaining code quality. I enjoy building scalable systems and clean UX.
+        </p>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Let's build something meaningful.</h2>
+        <p>Available for freelance, remote, and full-time opportunities.</p>
+        <a class="btn primary" href="mailto:gaurav@example.com">gaurav@example.com</a>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="year"></span> Gaurav. Crafted with modern web best practices.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
